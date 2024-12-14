@@ -1,10 +1,13 @@
 import React from 'react'
-import Navbar from '@/components/Navbar'
+import Searchbar from '../components/searchbar'
+import Hero from '../components/Hero'
 
 function index () {
   return (
-    <div>
-      <Navbar/>
+    <div className='bg-gray bg-gray-900'>
+       <Searchbar/>
+      <Hero/>
+    
 
     </div>
    

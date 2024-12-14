@@ -9,22 +9,22 @@
 // export default Navbar
 import React from "react";
 
-const Navbar = () => {
+const Hero = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white flex justify-center items-center p-6">
       <div className="w-full max-w-2xl bg-gray-800 p-4 rounded-lg shadow-lg">
         
-        {/* Extra div for overall container */}
+       
         <div className="space-y-6">
           
-          {/* Header Section */}
+         
           <div className="extra-div-header bg-gray-700 p-4 rounded-lg">
             <h1 className="text-3xl font-bold">Madrid</h1>
             <p>Chance of rain: 0%</p>
             <h2 className="text-6xl font-bold">31°</h2>
           </div>
 
-          {/* Today's Forecast */}
+          
           <div className="extra-div-today-forecast bg-gray-700 p-4 rounded-lg space-y-4">
             <h3 className="text-xl font-semibold">Today's Forecast</h3>
             <div className="flex justify-between text-center">
@@ -37,7 +37,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Air Conditions */}
+          
           <div className="extra-div-air-conditions bg-gray-700 p-4 rounded-lg space-y-2">
             <h3 className="text-xl font-semibold">Air Conditions</h3>
             <div className="grid grid-cols-2 gap-4">
@@ -60,7 +60,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* 7-Day Forecast */}
+          
           <div className="extra-div-7day-forecast bg-gray-700 p-4 rounded-lg space-y-4">
             <h3 className="text-xl font-semibold">7-Day Forecast</h3>
             <div className="space-y-2">
@@ -88,4 +88,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Hero;
