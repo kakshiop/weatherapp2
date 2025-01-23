@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
 
-function SearchBar() {
+function Searchbar({ value, onChange }) {
   return (
     <div>
       <form className="max-w-md mx-auto">
-        <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-200 sr-only">
+        <label
+          htmlFor="default-search"
+          className="mb-2 text-sm font-medium text-gray-200 sr-only"
+        >
           Search
         </label>
         <div className="relative">
@@ -28,6 +31,8 @@ function SearchBar() {
           <input
             type="search"
             id="default-search"
+            value={value} // Bind the value to the prop
+            onChange={onChange} // Handle changes via the prop
             className="block w-full p-4 ps-10 text-sm text-gray-100 border border-gray-600 rounded-lg bg-gray-800 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400"
             placeholder="Search Mockups, Logos..."
             required
@@ -44,4 +49,4 @@ function SearchBar() {
   );
 }
 
-export default SearchBar;
+export default Searchbar;
